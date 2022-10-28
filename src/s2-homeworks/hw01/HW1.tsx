@@ -23,7 +23,7 @@ export type MessageType = {
 export const message0: MessageType = {
     id: 0,
     user: {
-        avatar: 'avatar', // можно менять
+        avatar: avatar, // можно менять
         name: 'Some Name',  // можно менять
     },
     message: {
@@ -51,7 +51,7 @@ const HW1 = () => {
                 {/*проверка отображения (не менять)*/}
                 <div>
                     <Message message={message0} />
-                    <FriendMessage message={friendMessage0} />
+                    {/*<FriendMessage message={friendMessage0} />*/}
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
