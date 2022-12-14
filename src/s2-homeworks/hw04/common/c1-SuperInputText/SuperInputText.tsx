@@ -1,9 +1,9 @@
 import React, {
     ChangeEvent,
-    DetailedHTMLProps,
-    InputHTMLAttributes,
+    DetailedHTMLProps, // Что это?
+    InputHTMLAttributes, //Что это?
     KeyboardEvent,
-    ReactNode,
+    ReactNode, //Что это?
 } from 'react'
 import s from './SuperInputText.module.css'
 
