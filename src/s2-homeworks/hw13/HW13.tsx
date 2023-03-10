@@ -30,16 +30,13 @@ const HW13 = () => {
         setImage('')
         setText('')
         setInfo('...loading')
-
         axios
-            .post(url, {success: x})
-            .then((res) => {
-                setCode('Код 200!')
-                setImage(success200)
-                setText(res.data.errorText)
-                setInfo('...loading')
-                setInfo('')
+            .post(url, {success: x}).then((res) => {
 
+                setCode(res.data.code)
+                setImage(success200)
+                setText(res.data.status)
+                setInfo(res.data.info)
             })
             .catch((e) => {
                 if (e.response.status){
