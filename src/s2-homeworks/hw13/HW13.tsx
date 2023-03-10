@@ -52,8 +52,7 @@ const HW13 = () => {
                 }
                 if (x===null){
                     setInfo('')
-                    setText('Error')
-
+                    setText(e.message)
                 }
 
 
