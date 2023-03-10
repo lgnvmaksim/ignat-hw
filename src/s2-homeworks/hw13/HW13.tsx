@@ -32,8 +32,8 @@ const HW13 = () => {
         setInfo('...loading')
         axios
             .post(url, {success: x}).then((res) => {
-
-                setCode(res.data.code)
+            console.log(res)
+                setCode(`${res.status}`)
                 setImage(success200)
                 setText(res.data.status)
                 setInfo(res.data.info)
