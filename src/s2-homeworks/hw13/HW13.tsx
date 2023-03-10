@@ -76,7 +76,7 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         disabled={info === '...loading'}
-                        // дописать
+                        // дописать/
 
                     >
                         Send false
