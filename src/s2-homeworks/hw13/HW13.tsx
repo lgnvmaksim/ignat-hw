@@ -36,7 +36,7 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                setText('Hello!')
+                setText(res.statusText)
                 setInfo('...loading')
                 setInfo('')
 
@@ -50,6 +50,12 @@ const HW13 = () => {
                 } else{
                   setImage(errorUnknown)
                 }
+                if (x===null){
+                    setText('Error')
+                    setInfo('')
+                }
+
+
             })
 
     }
