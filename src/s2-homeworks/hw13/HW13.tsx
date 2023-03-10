@@ -35,26 +35,23 @@ const HW13 = () => {
             console.log(res)
                 setCode(`${res.status}`)
                 setImage(success200)
-                setText(res.data.status)
+                setText(res.data.errorText)
                 setInfo(res.data.info)
             })
             .catch((e) => {
+                console.log(e)
                 if (e.response.status){
                     setCode(e.response.status)
                     setImage(e.response.status === 500 ? error500 : error400)
                     setText(e.response.data.errorText)
                     setInfo(e.response.data.info)
                 } else{
+
                   setImage(errorUnknown)
-                }
-                if (x===null){
-                    setInfo('')
                     setText(e.message)
+                    setInfo('Error')
                 }
-
-
             })
-
     }
 
     return (
